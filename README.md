@@ -36,21 +36,19 @@ These flows will be used to:
 ## 📂 Repository Structure
 ```bash
 taskmanagerplus-qa-ai-lab/
-├─ README.md
-├─ docs/
-│  ├─ study-plan-week1.md
-│  ├─ video-01-script.md
-│  ├─ ai-prompts.md
-│  └─ decisions-log.md
-├─ prompts/
-│  ├─ test-generation/
-│  ├─ visual-testing/
-│  └─ log-analysis/
 ├─ tests/
-│  ├─ cypress/            
-│  └─ visual/             
-├─ logs/                  # Sample logs for AI analysis
-├─ reports/               # Test reports
-├─ scripts/               # Utilities (e.g., baseline screenshots)
-└─ .github/workflows/
-   └─ ci.yml              # Simple CI pipeline
+│  ├─ e2e/
+│  │  ├─ login.spec.ts
+│  │  └─ dashboard.spec.ts
+│  └─ fixtures/
+│     └─ test-fixture.ts        # fixture com nossas pages
+├─ src/
+│  └─ pages/
+│     ├─ base.page.ts
+│     ├─ login.page.ts
+│     └─ dashboard.page.ts
+├─ utils/
+│  ├─ selectors.ts               # mapeamento centralizado (bom p/ IA sugerir/atualizar)
+│  └─ visual.ts                  # helper p/ Visual AI (Applitools opcional)
+└─ playwright.config.ts
+
