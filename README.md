@@ -51,10 +51,11 @@ taskmanagerplus-qa-ai-lab/
 │  ├─ selectors.ts               # mapeamento centralizado (bom p/ IA sugerir/atualizar)
 │  └─ visual.ts                  # helper p/ Visual AI (Applitools opcional)
 └─ playwright.config.ts
+```
 
 ---
 
-## 🚀 Next Steps with AI in QA
+## 🚀 Next Steps
 
 ### 📄 File: docs/ai-prompts.md
 Pre-built blocks ready to copy and use:
@@ -82,34 +83,3 @@ Pre-built blocks ready to copy and use:
 - Simple workflow: run Playwright on push/PR  
 - Artifacts: HTML report + screenshots  
 - Optional: `APPLITOOLS_API_KEY` secret for advanced visual testing  
-
----
-
-## 🚀 Próximos Passos com IA em QA
-
-### 📄 Arquivo: docs/ai-prompts.md
-Blocos prontos para você colar e usar:
-- **Geração de Testes** (user story → casos de teste)
-- **Diff-based Testing** (mudança em código/UI → novos testes)
-- **Checkpoints Visuais** (login e dashboard)
-- **Análise de Logs** (explicação + próximos testes)
-
-### 🖼️ Checklist Visual Mínimo
-- **Login**: título, campo username, campo password, botão submit, erro de login  
-- **Dashboard**: header, lista de tarefas, botões Create/Edit/Delete, filtros Pending/Completed  
-
-### 🧪 Pacote de Casos de Teste via IA
-- **Login**: sucesso, falha de credencial, bloqueio após N tentativas, campos vazios, injeção simples  
-- **Tasks**: criação válida, criação sem título, edição de título, exclusão, filtro Pending/Completed, edge cases (título longo, caracteres especiais)  
-
-### 📌 Issues Organizadas (exemplo de título + descrição curta)
-- **#1 Setup & README** – configurar base e instruções  
-- **#2 Cenários Login (IA)** – casos gerados + fixtures  
-- **#3 Cenários Dashboard (IA)** – casos gerados + fixtures  
-- **#4 POC de Teste Visual** – snapshots nativos Playwright  
-- **#5 Logs + Prompt de Análise** – amostras reais + instrução  
-
-### ⚙️ CI com GitHub Actions
-- Workflow simples: rodar Playwright em push/PR  
-- Artefatos: relatório HTML + screenshots  
-- Opcional: secret `APPLITOOLS_API_KEY` para teste visual avançado  
