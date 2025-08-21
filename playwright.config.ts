@@ -25,7 +25,7 @@ export default defineConfig({
    reporter: [['list'], ['html', { open: 'never' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'http://localhost:4200', // ajuste conforme seu app
+    baseURL: 'http://localhost:4200', // 🔥 Define the URL base here!
     headless: true,
   },
 

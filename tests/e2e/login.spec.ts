@@ -10,7 +10,14 @@ test.describe('Login', () => {
 
   test('required fields', async ({ loginPage }) => {
     await loginPage.open();
-    await loginPage.login('', '');
+    await loginPage.login('1', '');
     await loginPage.expectRequiredMessages();
   });
+
+
+  test.only('username field present', async ({ loginPage }) => {
+    await loginPage.open();
+    await loginPage.expectUsernameFieldPresent();
+  });
+
 });

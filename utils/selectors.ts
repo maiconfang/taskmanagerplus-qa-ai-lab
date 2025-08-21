@@ -7,6 +7,7 @@ export const SEL = {
     password: 'login-password',
     submit:   'login-submit',
     errorArea: '[data-testid="login-errors"]', // or a text locator if needed
+    titleLabel: 'login_page_title_label', // <-- add this
   },
   dashboard: {
     title: 'dashboard-title',
